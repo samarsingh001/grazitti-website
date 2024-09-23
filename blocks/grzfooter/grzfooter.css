@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+.footer-last .grzfooter-wrapper .grzfooter div p{
+    display:inline-block;
+    font-size:12px;
+   
+    
+}
+.footer-last .grzfooter-wrapper .grzfooter div h2{
+    color:#D3D3D3;
+    font-size:18px;
+     font-weight:500;
+     font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+.footer-last .grzfooter-wrapper .grzfooter div:nth-child(3) h2{
+    margin-bottom: 20px;
+}
+
+.footer-last .grzfooter-wrapper .grzfooter div h3{
+    color:#FFFFFF;
+    font-size:15px;
+     font-weight:300;
+     margin-top:25px;
+
+}
+.footer-last .grzfooter-wrapper .grzfooter div h5{
+    color:#FFFFFF;
+    font-size:15px;
+     font-weight:300;
+     font-family: "Open Sans", sans-serif;
+     display:inline-block;
+
+}
+.grzfooter{
+    display:flex;
+    justify-content: space-between;
+   }
+/* .footer-last .grzfooter-wrapper .grzfooter div {
+  margin-left:2%;
+    width:85%;
+   
+ } */
+.footer-last .grzfooter-wrapper .grzfooter div a{
+     color: rgba(255, 255, 255, 0.7);
+}
+.footer-last .grzfooter-wrapper .grzfooter{
+     background-color:black;
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px 0 12px 0;
+    width:1220px;
+    margin:0 auto;
+}
+.footer-last .grzfooter-wrapper{
+    background-color:black;
+
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:first-of-type {
+    /* background-color: #f00; */
+    width:30%;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) {
+    /* background-color: #f00; */
+    width:30%;
+}
+
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) hr{
+    width:380px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) hr{
+    width:400px;
+}
+/* Custom CSS to override default border-radius */
+a.button:any-link, button {
+    border-radius: 0 !important; /* Set border-radius to none */
+    padding: 8px;
+    margin:12px 0 0;
+}
+
+.icon-facebook{
+    color:white;
+}
+/* Targeting the third div inside the second div of the .grzfooter-container */
+/* Example CSS to verify correct selection */
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > h5,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > h5,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > h5,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > h5 {
+  width:60px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9){
+  display: flex;
+  justify-content: space-between;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(2) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(5) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9){
+ margin-bottom: 8px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) > div:nth-of-type(5) 
+{
+    padding: 8px 0 10px 0;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(3) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(3) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2) {
+    margin-left: 5px;
+  } */
+  
+
+  
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(1) .button{
+    background-color: #3b5998;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(2) .button{
+    background-color: #FFFFFF;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(3) .button{
+    background-color: #0077b7;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(7) .button{
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(4) .button{
+    background-color: #e83938;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(5) .button{
+    background-color: #c4302a;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(6) .button{
+    background-color: #1b7e99;
+}
+.icon-mobile {
+    /* Your styles for the icon-mobile class */
+    width: 12px;
+    height: 12px;
+    /* Additional styles */
+}
+
+.icon-envelope {
+    /* Your styles for the icon-envelope class */
+    width: 12px;
+    height: 12px;
+    /* Additional styles */
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(3),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(4) {
+display: none;
+}
+
+@media (max-width: 768px) {
+    .grzfooter{
+        display:block;
+       }
+       .footer-last .grzfooter-wrapper .grzfooter{
+        width: 100%;
+        text-align: center;
+        /* margin: 0 auto; */
+       }
+       .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9){
+  display: block;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:first-of-type {
+    /* background-color: #f00; */
+    width:100%;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) {
+    /* background-color: #f00; */
+    width:100%;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(2) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) 
+{
+  text-align: left;
+  margin-left: 50px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(2) 
+{
+  display: inline-block;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(3),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(3),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(1) 
+{
+  display: inline-block;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > h5:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > h5:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > h5:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > h5:nth-of-type(1) 
+{
+  display: flex;
+}
+a.button:any-link, button {
+    padding: 4px;
+    margin:0;
+}
+
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(3),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(4) {
+display: block;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(6),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(7) {
+display:none;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(2), 
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) {
+
+padding-top: 18px;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(4){
+    padding-bottom: 18px;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(5){
+   padding-top: 0;
+    padding-bottom: 4px;
+}
+.footer-last .grzfooter-wrapper .grzfooter div h3{
+     margin-top:0;
+
+}
+/*to give gap between mobile and email div*/
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(2),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(1),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(1),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(1),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(1) {
+  
+ width: 40%;
+}
+.footer-last .grzfooter-wrapper .grzfooter div:nth-child(3) h2{
+    margin-bottom: 10px;
+}
+
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(3) > div:nth-of-type(2) {
+    margin-bottom: 16px;
+ }
+ .grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(3) > div:nth-of-type(3) {
+    width:80%;
+    text-align: center;
+    padding: 0 0 18px;
+    margin-left: 50px;
+ }
+ .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) hr{
+    width:280px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) hr{
+    width:300px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1220px) {
+   
+    .grzfooter{
+        display:block;
+       }
+       .footer-last .grzfooter-wrapper .grzfooter{
+      margin:0 auto;
+       width:80%;
+   }
+   .footer-last .grzfooter-wrapper .grzfooter div p{
+    font-size:20px;
+   
+    
+}
+.footer-last .grzfooter-wrapper .grzfooter div h2{
+    font-size:30px;
+   
+    
+}
+.footer-last .grzfooter-wrapper .grzfooter div h5,h3{
+    font-size:25px;
+   
+    
+}
+   .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) ,
+    .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2),
+    .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(3) {
+    
+    width:100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(3),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(4) {
+display: block;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(6),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(7) {
+display:none;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) hr{
+    width:500px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) hr{
+    width:700px;
+}
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(3) > div:nth-of-type(3) {
+    margin:10px 0 12px;
+}
+
+}

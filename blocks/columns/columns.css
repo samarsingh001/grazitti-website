@@ -1,3 +1,10 @@
+.columns-container {
+  max-width: 1264px;
+  margin: auto;
+}
+.columns-container{
+  padding-top: 70px;
+}
 .columns > div {
   display: flex;
   flex-direction: column;

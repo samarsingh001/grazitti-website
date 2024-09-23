@@ -1,19 +1,111 @@
+.cards-container
+/* .partnerships-container, */{
+  max-width: 1264px;
+  margin: auto;
+}
+.cards-container .default-content-wrapper,
+.cards-container .cards-wrapper,
+.partnerships-container .default-content-wrapper,
+.partnerships-container .partnerships-wrapper,
+.customers-container .default-content-wrapper,
+.customers-container .customers-wrapper,
+.columns-container .default-content-wrapper,
+.columns-container .columns-wrapper {
+  padding: 0 32px;
+}
+.cards-container > .default-content-wrapper,
+.columns-container > .default-content-wrapper,
+.partnerships-container > .default-content-wrapper,
+.partnerships-container > .partnerships-wrapper,
+.customers-container > .default-content-wrapper,
+.customers-container > .customers-wrapper {
+  text-align: center;
+  padding-bottom: 40px;
+}
+#what-we-do,
+#why-choose-us,
+#our-partnerships,
+#our-customers{
+  position: relative;
+}
+.default-content-wrapper > #what-we-do::after,
+.default-content-wrapper > #why-choose-us::after,
+.default-content-wrapper > #our-partnerships::after,
+.default-content-wrapper > #our-customers::after{
+content: "";
+position: absolute;
+width: 75px;
+height: 2px;
+background-color: #fcb735;
+left: 50%;
+margin-left: -37px;
+}
+#what-we-do::after,
+#why-choose-us::after,
+#our-partnerships::after,
+#our-customers::after{
+  bottom: -15px;
+}
+::after{
+  box-sizing: border-box;
+}
+.columns-container > .default-content-wrapper > p{
+  padding-top: 35px;
+  font-size: 16px;
+}
+.columns-wrapper .block{
+  display: flex;
+  width: 100%;
+}
+.block > .left,
+.block > .center,
+.block > .right {
+  flex-direction: column;
+}
+.block > .left {
+  text-align: right;
+}
+.block > .center {
+  width: 175%;
+  text-align: center;
+  justify-content: center;
+}
+.center > div {
+  display: flex;
+  align-items: center;
+}
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
-
-.cards .cards-card-body {
-  margin: 16px;
+.cards > ul > li{
+  color: #333;
+}
+.cards > ul > li > h3{
+  font-weight: 100;
+}
+.cards .cards-card-body > p{
+  /* padding: 0 5px; */
+  font-size: 16px;
+  padding-top: 12px;
+}
+.cards .cards-card-body > p > span{
+  /* margin: 16px; */
+  height: 60px;
+  width: 60px;
 }
 
 .cards .cards-card-image {
@@ -25,3 +117,145 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* This is the Our Partnerships Section CSS */
+.partnerships-container{
+  padding-top: 70px;
+  background-color: #092032;
+}
+#our-partnerships{
+  color: var(--light-color);
+}
+.partnerships-container .slider-item{
+  height: 150px;
+  width: 250px;
+}
+.partnerships-container .slider-item .partner-item,
+.customers-container .slider-item .customer-item{
+  /* height: 100%; */
+  width: 100%;
+}
+.partnerships-container .partnerships-wrapper,
+.customers-container .customers-wrapper{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    padding: 60px 0px 140px 0px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+  transform: translateX(calc(-250px* 19));
+  }
+}
+@keyframes customersscroll {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+  transform: translateX(calc(-250px* 12));
+  }
+}
+.partnerships{
+  animation: scroll 40s linear infinite;
+  display: flex;
+  gap: 50px;
+  /* align-self: center; */
+  width: calc(250px* 20);
+}
+.customers{
+  animation: customersscroll 40s linear infinite;
+  display: flex;
+  gap: 40px;
+  /* justify-content: space-between; */
+  /* margin: auto; */
+  /* align-self: center; */
+  width: calc(-250px* 19);
+}
+.partnerships > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This is the Our Customers Section CSS */
+.customers-container{
+  padding-top: 70px;
+}
+.customers-container .slider-item{
+  height: 100px;
+  width: 170px;
+}
+.customers-container .slider-item .customer-item{
+  height: 100%;
+  width: 100%;
+}
+.customer-item{
+  position: relative;
+  overflow: hidden;
+}
+.customers > .slider-item > .customer-item > picture > img{
+object-fit: none;
+}
+.customers > .slider-item:nth-of-type(1) > .customer-item > picture > img{
+  object-position: -308px -263px;
+}
+.customers > .slider-item:nth-of-type(2) > .customer-item > picture > img{
+  object-position: -308px -356px;
+}
+.customers > .slider-item:nth-of-type(3) > .customer-item > picture > img{
+object-position: -305px 0px;
+}
+.customers > .slider-item:nth-of-type(4) > .customer-item > picture > img{
+  object-position: 0 0%;
+}
+.customers > .slider-item:nth-of-type(5) > .customer-item > picture > img{
+   object-position: -152px -356px;
+}
+.customers > .slider-item:nth-of-type(6) > .customer-item > picture > img{
+  object-position: 8px -356px;
+}
+.customers > .slider-item:nth-of-type(7) > .customer-item > picture > img{
+  object-position: -477px -264px;
+}
+.customers > .slider-item:nth-of-type(8) > .customer-item > picture > img{
+  object-position: -154px -268px;
+}
+.customers > .slider-item:nth-of-type(9) > .customer-item > picture > img{
+  object-position: 8px -180px;
+}
+.customers > .slider-item:nth-of-type(10) > .customer-item > picture > img{
+  object-position: -150px -4px;
+}
+.customers > .slider-item:nth-of-type(11) > .customer-item > picture > img{
+  object-position: -4px -268px;
+}
+.customers > .slider-item:nth-of-type(12) > .customer-item > picture > img{
+  object-position: -311px -178px;
+}
+.customers > .slider-item:nth-of-type(13) > .customer-item > picture > img{
+  object-position: 8px -92px;
+}
+.customers > .slider-item:nth-of-type(14) > .customer-item > picture > img{
+  object-position: -470px -356px;
+}
+.customers > .slider-item:nth-of-type(15) > .customer-item > picture > img{
+  object-position: -313px -92px;
+}
+.customers > .slider-item:nth-of-type(16) > .customer-item > picture > img{
+  object-position: -153px -92px;
+}
+.customers > .slider-item:nth-of-type(17) > .customer-item > picture > img{
+  object-position: -478px -180px;
+}
+.customers > .slider-item:nth-of-type(18) > .customer-item > picture > img{
+  object-position: -478px 4px;
+}
+.customers > .slider-item:nth-of-type(19) > .customer-item > picture > img{
+  object-position: -478px -82px;
+}
+

@@ -1,0 +1,73 @@
+.fragment-container{
+    background-color: #092032;
+    color: var(--light-color);
+}
+.fragment-wrapper{
+    max-width: 1264px;
+    margin: auto;
+    .carousel-container{
+        padding: 0 35px;
+        .default-content-wrapper{
+            text-align: center;
+            padding: 50px 0 40px 0;
+            font-weight: 500;
+            #our-clients-love-us{
+                position: relative;
+            }
+            #our-clients-love-us::after{
+                content: "";
+                position: absolute;
+                width: 75px;
+                height: 2px;
+                background-color: #fcb735;
+                left: 50%;
+                margin-left: -37px;
+                bottom: -15px;
+            }
+        }
+    }
+}
+::after{
+    box-sizing: border-box;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    text-align: center;
+  }
+  
+  .carousel-container .carousel-wrapper .our-clients > div > picture > img {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+  }
