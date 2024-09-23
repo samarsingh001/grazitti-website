@@ -1,15 +1,6 @@
-/*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
- */
-
+body{
+    /* background-color:red; */
+}
 :root {
   /* colors */
   --background-color: white;
@@ -20,15 +11,15 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
+  --body-font-family:'Open Sans', sans-serif;
+  --heading-font-family: ;
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
-  /* body sizes */
   --body-font-size-m: 22px;
   --body-font-size-s: 19px;
   --body-font-size-xs: 17px;
 
-  /* heading sizes */
   --heading-font-size-xxl: 55px;
   --heading-font-size-xl: 44px;
   --heading-font-size-l: 34px;
@@ -37,10 +28,11 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 80px;
+  /* --nav-height: 64px; */
 }
 
-/* fallback fonts */
+
 @font-face {
   font-family: roboto-condensed-fallback;
   size-adjust: 88.82%;
@@ -55,14 +47,14 @@
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
+   
     --body-font-size-m: 18px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 14px;
 
-    /* heading sizes */
+    
     --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
+    --heading-font-size-xl: 32px;
     --heading-font-size-l: 28px;
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
@@ -104,10 +96,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 100;
   line-height: 1.25;
   scroll-margin: 40px;
 }
@@ -125,8 +117,8 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0.45em;
+  margin-bottom: 0em;
 }
 
 code,
@@ -141,31 +133,21 @@ pre {
   overflow-x: auto;
   white-space: pre;
 }
-
-main > div {
-  margin: 40px 16px;
-}
-
 input,
 textarea,
 select,
 button {
   font: inherit;
 }
-
-/* links */
 a:any-link {
-  color: var(--link-color);
+  color: #333;
   text-decoration: none;
   word-break: break-word;
 }
-
 a:hover {
-  color: var(--link-hover-color);
+  /* color: var(--link-hover-color); */
   text-decoration: underline;
 }
-
-/* buttons */
 a.button:any-link,
 button {
   box-sizing: border-box;
@@ -211,15 +193,12 @@ button.secondary {
 }
 
 main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+ 
+  height: 100%;
 }
 
 .icon {
   display: inline-block;
-  height: 24px;
-  width: 24px;
 }
 
 .icon img {
@@ -227,31 +206,1113 @@ main img {
   width: 100%;
 }
 
-/* sections */
-main > .section {
-  margin: 40px 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+h1,h2,h3,h4,h5,h6,p {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+.grazitti-heading-footer p {
+  margin: 0;
+  padding: 0;
 }
 
-main > .section:first-of-type {
-  margin-top: 0;
+.grazitti-heading-footer , .grazitti-about
+{
+    color:white;
+    background-color:#10141D;
+    /* padding:24px 0 48px; this i make comment */
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
+.grazitti-about .default-content-wrapper {
+    display: flex;
+    width:1220px;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+
+.grazitti-heading-footer .default-content-wrapper p:first-of-type {
+  font-size: 38px;
+    font-weight:300;
+   
+}
+.grazitti-about .default-content-wrapper p:first-of-type {
+ width:48%;
+   font-size:16px;
+    text-align:justify;
+}
+
+.grazitti-heading-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.grazitti-about .default-content-wrapper p::first-line {
+    font-size:38px;
+    font-weight:300;
+ }
+.grazitti-heading-footer .default-content-wrapper p:nth-child(2) {
+  cursor:pointer;
+}
+.grazitti-about .default-content-wrapper p:nth-child(2) {
+  cursor:pointer;
+  margin-top: -30px;
+}
+.grazitti-about .default-content-wrapper p:first-child a {
+  display:inline-block;
+    margin-top:16px;
+}
+.grazitti-about .default-content-wrapper p:first-child a {
+  color:#13A7EC;
+}
+
+.grazitti-about {
+  display: block; /* Ensure the element takes up space */
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  /* transition: height 3s ease, opacity 3s ease; */
+  transform: translateY(100%); /* Start below the viewport */
+  transition: transform 3s ease, opacity 2s ease;
+
+}
+.grazitti-about.active{
+  
+  opacity: 1;
+  height: auto;
+  padding: 24px 0 48px;
+  transform: translateY(0); /* Slide into place from the bottom */
+
+}
+.grazitti-about .default-content-wrapper p:nth-of-type(3) {
+padding-top:10px;
+}
+
+
+@media (max-width: 768px) {
+  .grazitti-about .default-content-wrapper {
+    /* display: block;
+    padding: 0 15px; */
+    width: 80%;
+  }
+  .grazitti-about .default-content-wrapper p:nth-of-type(3) {
+    padding-top:0;
+    }
+  .grazitti-about .default-content-wrapper p:first-of-type::first-line {
+   
+    font-size: 38px;
+    font-weight: 300;
+}
+.grazitti-about .default-content-wrapper p:first-of-type {
+  width:100%;
+ }
+   /*to center the img having video*/
+.grazitti-about .default-content-wrapper p:nth-child(3){
+  text-align: center; /* Center the image within the <p> tag */
+}
+.grazitti-about .default-content-wrapper p img {
+  /* max-width: 100%; Make sure the image doesn't exceed the width of its parent *//*done this change*/
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Removes the inline spacing for the image */
+  margin: 0 auto; /* Center the image horizontally */
+  width:100%; /*done this change*/
+}
+/*done this chabge*/
+grazitti-about.active{
+  
+ overflow: visible;
+
+}
+.section.grazitti-about .default-content-wrapper {
+  display: flex;
+  flex-direction: column; /* Ensure the flex-direction is column for stacking */
+}
+
+.section.grazitti-about .default-content-wrapper p:nth-child(1) {
+  order: 2; /* Move the first <p> tag to the second position */
+}
+
+.section.grazitti-about .default-content-wrapper p:nth-child(2) {
+  order: 1; /* Move the second <p> tag to the first position */
+  text-align: center;
+}
+
+.section.grazitti-about .default-content-wrapper p:nth-child(3) {
+  order: 3; /* Keep the third <p> tag in the third position */
+}
+.grazitti-about .default-content-wrapper p:first-child a {
+    margin-top:16px;
+    margin-bottom: 0;
+}
+}
+@media (min-width: 768px) and (max-width: 1220px) {
+  .grazitti-about .default-content-wrapper {
+    display: block;
+    width:80%;
+    margin: 0 auto;
+}
+.section.grazitti-about .default-content-wrapper {
+  display: flex;
+  flex-direction: column; /* Ensures the elements are stacked vertically */
+}
+  .section.grazitti-about .default-content-wrapper p:nth-child(1) {
+    order: 2; /* Move the first <p> tag to the second position */
+    text-align: left;
+    width:100%;
+    font-size: 20px;
+
+  }
+  
+  .section.grazitti-about .default-content-wrapper p:nth-child(2) {
+    order: 1; /* Move the second <p> tag to the first position */
+    text-align: center;
+  }
+  
+  .section.grazitti-about .default-content-wrapper p:nth-child(3) {
+    order: 3; /* Keep the third <p> tag in the third position */
+    text-align: left;
+
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
 }
+.footer-last .grzfooter-wrapper .grzfooter div p{
+    display:inline-block;
+    font-size:12px;
+   
+    
+}
+.footer-last .grzfooter-wrapper .grzfooter div h2{
+    color:#D3D3D3;
+    font-size:18px;
+     font-weight:500;
+     font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+.footer-last .grzfooter-wrapper .grzfooter div:nth-child(3) h2{
+    margin-bottom: 20px;
+}
+
+.footer-last .grzfooter-wrapper .grzfooter div h3{
+    color:#FFFFFF;
+    font-size:15px;
+     font-weight:300;
+     margin-top:25px;
+
+}
+.footer-last .grzfooter-wrapper .grzfooter div h5{
+    color:#FFFFFF;
+    font-size:15px;
+     font-weight:300;
+     font-family: "Open Sans", sans-serif;
+     display:inline-block;
+
+}
+.grzfooter{
+    display:flex;
+    justify-content: space-between;
+   }
+/* .footer-last .grzfooter-wrapper .grzfooter div {
+  margin-left:2%;
+    width:85%;
+   
+ } */
+.footer-last .grzfooter-wrapper .grzfooter div a{
+     color: rgba(255, 255, 255, 0.7);
+}
+.footer-last .grzfooter-wrapper .grzfooter{
+     background-color:black;
+    color: rgba(255, 255, 255, 0.7);
+    padding:20px 0 12px 0;
+    width:1220px;
+    margin:0 auto;
+}
+.footer-last .grzfooter-wrapper{
+    background-color:black;
+
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:first-of-type {
+    /* background-color: #f00; */
+    width:30%;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) {
+    /* background-color: #f00; */
+    width:30%;
+}
+
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) hr{
+    width:380px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) hr{
+    width:400px;
+}
+/* Custom CSS to override default border-radius */
+a.button:any-link, button {
+    border-radius: 0 !important; /* Set border-radius to none */
+    padding: 8px;
+    margin:12px 0 0;
+}
+
+.icon-facebook{
+    color:white;
+}
+/* Targeting the third div inside the second div of the .grzfooter-container */
+/* Example CSS to verify correct selection */
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > h5,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > h5,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > h5,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > h5 {
+  width:60px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9){
+  display: flex;
+  justify-content: space-between;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(2) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(5) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9){
+ margin-bottom: 8px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) > div:nth-of-type(5) 
+{
+    padding: 8px 0 10px 0;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(3) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(3) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(2) {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2) {
+    margin-left: 5px;
+  } */
+  
+
+  
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(1) .button{
+    background-color: #3b5998;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(2) .button{
+    background-color: #FFFFFF;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(3) .button{
+    background-color: #0077b7;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(7) .button{
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(4) .button{
+    background-color: #e83938;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(5) .button{
+    background-color: #c4302a;
+}
+.footer-last .grzfooter-wrapper .grzfooter .button-container:nth-child(6) .button{
+    background-color: #1b7e99;
+}
+.icon-mobile {
+    /* Your styles for the icon-mobile class */
+    width: 12px;
+    height: 12px;
+    /* Additional styles */
+}
+
+.icon-envelope {
+    /* Your styles for the icon-envelope class */
+    width: 12px;
+    height: 12px;
+    /* Additional styles */
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(3),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(4) {
+display: none;
+}
+
+@media (max-width: 768px) {
+    .grzfooter{
+        display:block;
+       }
+       .footer-last .grzfooter-wrapper .grzfooter{
+        width: 100%;
+        text-align: center;
+        /* margin: 0 auto; */
+       }
+       .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9){
+  display: block;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:first-of-type {
+    /* background-color: #f00; */
+    width:100%;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) {
+    /* background-color: #f00; */
+    width:100%;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(2) ,
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) 
+{
+  text-align: left;
+  margin-left: 50px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(2),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(2) 
+{
+  display: inline-block;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(3),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(3),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(1) 
+{
+  display: inline-block;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > h5:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > h5:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > h5:nth-of-type(1),
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > h5:nth-of-type(1) 
+{
+  display: flex;
+}
+a.button:any-link, button {
+    padding: 4px;
+    margin:0;
+}
+
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(3),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(4) {
+display: block;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(6),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(7) {
+display:none;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(2), 
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) {
+
+padding-top: 18px;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(4){
+    padding-bottom: 18px;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(5){
+   padding-top: 0;
+    padding-bottom: 4px;
+}
+.footer-last .grzfooter-wrapper .grzfooter div h3{
+     margin-top:0;
+
+}
+/*to give gap between mobile and email div*/
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(3) > p:nth-of-type(2),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(4) > p:nth-of-type(2),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(6) > p:nth-of-type(1),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(7) > p:nth-of-type(1),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(8) > p:nth-of-type(1),
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(2) > div:nth-of-type(9) > p:nth-of-type(1) {
+  
+ width: 40%;
+}
+.footer-last .grzfooter-wrapper .grzfooter div:nth-child(3) h2{
+    margin-bottom: 10px;
+}
+
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(3) > div:nth-of-type(2) {
+    margin-bottom: 16px;
+ }
+ .grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(3) > div:nth-of-type(3) {
+    width:80%;
+    text-align: center;
+    padding: 0 0 18px;
+    margin-left: 50px;
+ }
+ .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) hr{
+    width:280px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) hr{
+    width:300px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1220px) {
+   
+    .grzfooter{
+        display:block;
+       }
+       .footer-last .grzfooter-wrapper .grzfooter{
+      margin:0 auto;
+       width:80%;
+   }
+   .footer-last .grzfooter-wrapper .grzfooter div p{
+    font-size:20px;
+   
+    
+}
+.footer-last .grzfooter-wrapper .grzfooter div h2{
+    font-size:30px;
+   
+    
+}
+.footer-last .grzfooter-wrapper .grzfooter div h5,h3{
+    font-size:25px;
+   
+    
+}
+   .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) ,
+    .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2),
+    .footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(3) {
+    
+    width:100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(3),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(3) > div:nth-child(4) {
+display: block;
+}
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(6),
+.section.footer-last.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-child(1) > div:nth-child(7) {
+display:none;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(1) hr{
+    width:500px;
+}
+.footer-last .grzfooter-wrapper .grzfooter > div:nth-of-type(2) hr{
+    width:700px;
+}
+.grzfooter-container > .grzfooter-wrapper > .grzfooter > div:nth-of-type(3) > div:nth-of-type(3) {
+    margin:10px 0 12px;
+}
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+h1,h2,h3,h4,h5,h6,p,.main,.section
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    height: 0;
+}
+/* .careers-container{
+    max-width: 1220px;
+    margin: 0 auto;
+} */
+/* applying bg image to first section */
+.first-careers-section {
+    background-image: url('https://www.grazitti.com/wp-content/uploads/2023/09/JobBG.jpg');
+    background-size: cover; /* Adjusts the size of the image */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    height:100vh;
+
+  }
+ /* diplaying contents of main div to center */
+  .first-careers-section {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+  }
+  
+  .first-careers-section h1{
+        font-size: 48px;
+        font-weight: 600;
+        font-family: sans-serif;
+        margin-bottom: 0;
+    }
+    .first-careers-section > div:nth-child(2) p {
+        font-size: 24px;
+        font-weight: 700; 
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .first-careers-section > div:nth-child(3) p img{
+       width: 17px;
+       height: 17px;
+      }
+      .first-careers-section > div:nth-child(3){
+        height: auto;
+        font-size: 16px;
+
+        padding: 12px 16px;
+        line-height: normal;
+        text-align: left;
+        /* background-position: 175px; */
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+       background-color: #13a7ec;
+        border-radius: 3px;
+        font-weight: bold;
+       
+      }
+      .first-careers-section > div:nth-child(3) p {
+        display: flex;
+        align-items: center;
+        gap:10px;
+        /* color: white; */
+        margin: 0;
+    }
+    
+    .first-careers-section > div:nth-child(3) p img {
+        width: 17px;
+        height: 17px;
+        transform: translateY(3px); /* Adjust the value to move the image down */
+
+    }
+    .first-careers-section > div:nth-child(3) a{
+        color: white;
+        text-decoration: none;
+    }
+    .first-careers-section > div:nth-child(3) {
+        cursor: pointer;
+    }
+    .second-careers-section{
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 32px 0 38.4px 0;
+        text-align: center;
+
+    }
+    .second-careers-section > div:nth-child(1) > p {
+    font-size: 20.8px;
+    font-weight: 400;
+    margin-bottom: 0;
+    }
+    .second-careers-section > div:nth-child(2) > h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 13px 0 8px;
+        }
+    .second-careers-section > div:nth-child(3) > p{
+            font-size: 22.4px;
+            font-weight: 600;
+        }
+       .carousel-first-section, .carousel-second-section, .carousel-third-section{
+        max-width: 1220px;
+        margin: 0 auto;
+        display:flex;
+       }
+        .new-wrapper-class{
+            background-color: #f6ac1d;
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-image: url('https://www.grazitti.com/wp-content/uploads/2019/08/bg.png');
+        }
+
+
+        .new-wrapper-class {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            /* max-width: 1220px; 
+            margin: 0 auto; */
+          }
+          
+          /* .carousel-first-section, 
+          .carousel-second-section, 
+          .carousel-third-section {
+            display: flex;
+            box-sizing: border-box;
+          } */
+          .carousel-first-section > div:first-of-type, 
+          .carousel-second-section > div:first-of-type, 
+          .carousel-third-section  > div:first-of-type
+          {
+            margin-left: -100px;
+          }
+        
+          .carousel-indicators {
+            position: absolute;
+            bottom: 35px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10; /*Tto ensure indicators are above other content */
+          }
+          
+          .carousel-indicator {
+            width: 15px; /* carouselindicators width and height*/
+            height: 15px; 
+            border-radius: 100%;
+            background-color: #bbb; /* Inactive color */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          
+          .carousel-indicator.active {
+            background-color: white /* Active color */
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(2) {
+           font-size: 25.6px;
+          margin: 90px 0 16px 0;
+          padding:0 340px 0 32px;
+           color:white;
+
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(1) {
+            margin-left: -160px;
+            margin-top: 70px;
+            font-size: 21.6px;
+            color: black;
+            transform: translateY(-50%) skew(-10deg);
+            padding: 8px 16px;
+            display: inline-block;
+            background-clip: padding-box;
+            background-color: rgb(255,255,255,0.8);
+           }
+          main  img{
+            height: 100%;
+          }
+          .fourth-careers-section{
+            max-width: 1220px;
+            margin: 0 auto;
+          }
+          .fourth-careers-section > div:nth-child(1) > h2 {
+            font-size: 32px;
+            margin: 0 0 8px;
+          }
+          .fourth-careers-section > div:nth-child(2) > p{
+            font-size: 22.4px;
+            margin: 0 0 16px;
+          }
+          .fourth-careers-section {
+            padding: 57.6px 0;
+            text-align: center;
+          }
+          .fifth-careers-section,.sixth-careers-section{
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+         
+          }
+          .fifth-careers-section > div:nth-child(1),
+          .sixth-careers-section > div:nth-child(1)
+          {
+            width: 50%;
+          }
+
+          .fifth-careers-section > div:nth-child(2) > p{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 80px 0 16px;
+            padding: 0 50px 0 30px;
+            line-height: 1.8;
+
+          }
+          .fifth-careers-section > div:nth-child(2) > h3{
+            font-size: 32px;
+            margin: 70px 50px 20px -80px;
+            padding: 16px 368px 16px 16px;
+            background-color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+          }
+          .fifth-careers-section > div:nth-child(1) > picture{
+            padding-left: 30px;
+          }
+
+          .sixth-careers-section > div:nth-child(1) > p{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 70px 0 16px;
+            padding: 0 50px 0 30px;
+            line-height: 1.8;
+
+          }
+          .sixth-careers-section > div:nth-child(1) > h3{
+            font-size: 32px;
+            background-color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            text-align: end;
+            margin: 70px -37px 0 0;
+            padding: 16px 0 16px 335px;
+          }
+          
+          .fifth-careers-section > div:nth-child(2) {
+            border-left:5px solid #f8ad1d;
+            width: 50%;
+          }
+          
+        .sixth-careers-section > div:nth-child(2){
+          border-left:5px solid #f8ad1d;
+          width: 50%;
+        }
+        .sixth-careers-section > div:nth-child(2) > picture{
+          padding-left: 60px;
+        }
+        .seventh-careers-section{
+          max-width: 1220px ;
+          margin: 0 auto;
+          padding: 76.8px 0 24px;
+        }
+        .seventh-careers-section h2{
+          font-size: 38px;
+          font-weight: 600;
+          padding-left: 40%;
+        }
+        .eight-careers-section{
+          max-width: 1220px;
+          margin: 0 auto;
+          padding-bottom: 76.8px;
+        }
+
+        .video-container video {
+          max-width: 100%; /* Make sure the video doesn't overflow its container */
+          height: auto; /* Maintain aspect ratio */
+      }
+      
+      @media (max-width: 768px) {
+        .first-careers-section {
+          background-position: top; /* Moves the image focus to the top */
+          height: auto; 
+          background-size: cover;
+        }
+        .first-careers-section > div:nth-child(1){
+          margin-top:64px;
+        }
+        .first-careers-section h1 {
+          font-size: 48px; 
+          margin-bottom: 0;
+        }
+      
+        .first-careers-section > div:nth-child(2) p {
+          font-size: 16px; 
+          font-weight: 700;
+          margin-bottom: 16px; 
+        }
+        .first-careers-section > div:nth-child(3){
+          font-size: 12px;
+  
+          padding: 6px 10px;
+         margin: 0px 0 47.6px;
+          border-radius: 3px;
+         
+        }
+       
+        .second-careers-section{
+          padding: 0 15px;
+  
+      }
+      .second-careers-section > div:nth-child(1) > p {
+      padding: 32px 0;
+        }
+        .second-careers-section > div:nth-child(2) > h2 {
+          font-size: 24px;
+          margin: 0 0 8px;
+          }
+          .second-careers-section > div:nth-child(3) > p{
+            font-size: 17.6px;
+            margin: 0 0 54px;
+      }
+      .second-careers-section > div:nth-child(1) > p{
+        font-size: 17.6px;
+  }
+       .new-wrapper-class{
+        background-image: none;
+        padding: 56px 16px;
+        text-align: center;
+       }
+       .carousel-first-section, 
+       .carousel-second-section, 
+       .carousel-third-section {
+         display:flex;
+         flex-direction: column;
+       }
+       .carousel-first-section img, 
+       .carousel-second-section img, 
+       .carousel-third-section img{
+          width: 149px;
+          height: 149px;
+          border: 5px solid white;
+          border-radius: 50%;
+       }
+       .carousel-first-section > div:first-of-type, 
+       .carousel-second-section > div:first-of-type, 
+       .carousel-third-section  > div:first-of-type
+       {
+         margin-left: 10px;
+       }
+       .carousel-first-section > div:nth-child(2), 
+          .carousel-second-section > div:nth-child(2), 
+          .carousel-third-section  > div:nth-child(2) 
+          {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(2) {
+            font-size: 16px;
+           margin:0 0 16px;
+           padding:16px 0 0 ;
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(1){
+              font-size: 16px;
+              padding: 8px 16px;
+              margin-top: 16px;
+              margin-left: 0;
+              align-self: center;
+
+          }
+          .carousel-indicators{
+            bottom: auto;
+          }
+          .fourth-careers-section {
+            padding: 57.6px 0 64px 0;
+            text-align: center;
+          }
+          .fourth-careers-section > div:nth-child(1) > h2 {
+            font-size: 24px;
+          }
+          .fourth-careers-section > div:nth-child(2) > p{
+            font-size: 17.6px;
+            font-weight: 600;
+            padding: 0 15px;
+          }
+          .fifth-careers-section, .sixth-careers-section{
+              display: block;
+              
+          }
+          .sixth-careers-section{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .fifth-careers-section > div:nth-child(2) > h3{
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin: 1px 0 8px;
+            padding: 25.6px 35px 16px;
+
+          }
+          .fifth-careers-section  img{         
+            width: 90%;
+          }
+          .sixth-careers-section  img{         
+            width: 90%;
+          }
+          .fifth-careers-section > div:nth-child(1),
+          .sixth-careers-section > div:nth-child(1)
+          {
+            width: 100%;
+            /* padding: 0 15px; */
+          }
+          .fifth-careers-section > div:nth-child(1) > picture{
+            padding:0 15px;
+          }
+          .sixth-careers-section > div:nth-child(2) > picture{
+            padding:0 15px;
+          }
+          .fifth-careers-section > div:nth-child(2) {
+            border-left:none;
+            width: 100%;
+          }
+          
+        .sixth-careers-section > div:nth-child(2){
+          border-left:none;
+          width:100%;
+        }
+        .sixth-careers-section > div:nth-child(1) > h3{
+          
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin: 1px 0 8px;
+        padding: 25.6px 35px 16px;
+
+        }
+        .new-wrapper-class {
+         width: auto;
+        }
+        .fifth-careers-section > div:nth-child(2) > p{
+          font-size: 18px;
+          margin: 0 0 16px;
+          padding: 16px 16px 0;
+          text-align: center;
+        }
+        .sixth-careers-section > div:nth-child(1) > p{
+          font-size: 18px;
+          margin: 0 0 16px;
+          padding: 16px 16px 0;
+          text-align: center;
+        }
+        /* Life at grazitti section  */
+        .seventh-careers-section h2{
+          margin: 0 0 24px;
+          padding: 0;
+          text-align: center;
+
+        }
+        .seventh-careers-section{
+          padding: 76.8px 0 0px;
+        }
+        .eight-careers-section{
+          padding: 0 15px 48px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1220px) {
+      .first-careers-section {
+        background-size: contain;
+       height: 32vh;
+    }
+    .second-careers-section{
+      padding: 56px;
+    }
+      .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(2) {
+        font-size: 15.2px;
+        margin: 0 0 16px;
+        padding: 58px 16px 0 32px;
+    }
+      .new-wrapper-class{
+        background-size: cover;
+        height: 40vh;
+      }
+      .carousel-indicators{
+            left: 60%;
+      }
+      .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(1){
+        margin-left: 0;
+        margin-top: 90px;
+      }
+      .fifth-careers-section, .sixth-careers-section{
+        display: block;
+        width: 70%;
+    }
+    .sixth-careers-section{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .fifth-careers-section > div:nth-child(1),
+          .sixth-careers-section > div:nth-child(1)
+          {
+            width: 100%;
+          }
+          .fifth-careers-section > div:nth-child(2),
+          .sixth-careers-section > div:nth-child(2){
+
+            border-left:none;
+            width: 100%;
+          }
+         /* for space between image and heading  */
+       .fifth-careers-section > div:nth-child(1),
+       .sixth-careers-section > div:nth-child(2){
+        padding: 0 0 16px;
+       }
+    .sixth-careers-section > div:nth-child(1) > p{
+      font-size: 18px;
+      margin: 0 0 16px;
+      padding: 16px 16px 25.6px;
+      text-align: center;
+    }
+    .fifth-careers-section > div:nth-child(2) > p{
+      font-size: 18px;
+      margin: 0 0 16px;
+      padding: 16px 16px 25.6px;
+      text-align: center;
+    }
+   
+    .fifth-careers-section > div:nth-child(2) > h3{
+      font-size: 28.8px;
+      font-weight: 600;
+      text-align: center;
+      margin: 1px 0 8px;
+      padding: 25.6px 35px 16px;
+
+    }
+    .sixth-careers-section > div:nth-child(1) > h3{
+      font-size: 28.8px;
+      font-weight: 600;
+      text-align: center;
+      margin: 1px 0 8px;
+      padding: 25.6px 35px 16px;
+
+    }
+    .seventh-careers-section h2{
+      text-align: center;
+      padding: 0;
+    }
+    .eight-careers-section{
+      margin: 0 50px;
+      padding: 0 15px 76.8px;
+    }
+    }
