@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+h1,h2,h3,h4,h5,h6,p,.main,.section
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    height: 0;
+}
+/* .careers-container{
+    max-width: 1220px;
+    margin: 0 auto;
+} */
+/* applying bg image to first section */
+.first-careers-section {
+    background-image: url('https://www.grazitti.com/wp-content/uploads/2023/09/JobBG.jpg');
+    background-size: cover; /* Adjusts the size of the image */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    height:100vh;
+
+  }
+ /* diplaying contents of main div to center */
+  .first-careers-section {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+  }
+  
+  .first-careers-section h1{
+        font-size: 48px;
+        font-weight: 600;
+        font-family: sans-serif;
+        margin-bottom: 0;
+    }
+    .first-careers-section > div:nth-child(2) p {
+        font-size: 24px;
+        font-weight: 700; 
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .first-careers-section > div:nth-child(3) p img{
+       width: 17px;
+       height: 17px;
+      }
+      .first-careers-section > div:nth-child(3){
+        height: auto;
+        font-size: 16px;
+
+        padding: 12px 16px;
+        line-height: normal;
+        text-align: left;
+        /* background-position: 175px; */
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+       background-color: #13a7ec;
+        border-radius: 3px;
+        font-weight: bold;
+       
+      }
+      .first-careers-section > div:nth-child(3) p {
+        display: flex;
+        align-items: center;
+        gap:10px;
+        /* color: white; */
+        margin: 0;
+    }
+    
+    .first-careers-section > div:nth-child(3) p img {
+        width: 17px;
+        height: 17px;
+        transform: translateY(3px); /* Adjust the value to move the image down */
+
+    }
+    .first-careers-section > div:nth-child(3) a{
+        color: white;
+        text-decoration: none;
+    }
+    .first-careers-section > div:nth-child(3) {
+        cursor: pointer;
+    }
+    .second-careers-section{
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 32px 0 38.4px 0;
+        text-align: center;
+
+    }
+    .second-careers-section > div:nth-child(1) > p {
+    font-size: 20.8px;
+    font-weight: 400;
+    margin-bottom: 0;
+    }
+    .second-careers-section > div:nth-child(2) > h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 13px 0 8px;
+        }
+    .second-careers-section > div:nth-child(3) > p{
+            font-size: 22.4px;
+            font-weight: 600;
+        }
+       .carousel-first-section, .carousel-second-section, .carousel-third-section{
+        max-width: 1220px;
+        margin: 0 auto;
+        display:flex;
+       }
+        .new-wrapper-class{
+            background-color: #f6ac1d;
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-image: url('https://www.grazitti.com/wp-content/uploads/2019/08/bg.png');
+        }
+
+
+        .new-wrapper-class {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            /* max-width: 1220px; 
+            margin: 0 auto; */
+          }
+          
+          /* .carousel-first-section, 
+          .carousel-second-section, 
+          .carousel-third-section {
+            display: flex;
+            box-sizing: border-box;
+          } */
+          .carousel-first-section > div:first-of-type, 
+          .carousel-second-section > div:first-of-type, 
+          .carousel-third-section  > div:first-of-type
+          {
+            margin-left: -100px;
+          }
+        
+          .carousel-indicators {
+            position: absolute;
+            bottom: 35px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10; /*Tto ensure indicators are above other content */
+          }
+          
+          .carousel-indicator {
+            width: 15px; /* carouselindicators width and height*/
+            height: 15px; 
+            border-radius: 100%;
+            background-color: #bbb; /* Inactive color */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          
+          .carousel-indicator.active {
+            background-color: white /* Active color */
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(2) {
+           font-size: 25.6px;
+          margin: 90px 0 16px 0;
+          padding:0 340px 0 32px;
+           color:white;
+
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(1) {
+            margin-left: -160px;
+            margin-top: 50px;
+            font-size: 21.6px;
+            color: black;
+            transform: translateY(-50%) skew(-10deg);
+            padding: 8px 16px;
+            display: inline-block;
+            background-clip: padding-box;
+            background-color: rgb(255,255,255,0.8);
+           }
+          main  img{
+            height: 100%;
+          }
+          .fourth-careers-section{
+            max-width: 1220px;
+            margin: 0 auto;
+          }
+          .fourth-careers-section > div:nth-child(1) > h2 {
+            font-size: 32px;
+            margin: 0 0 8px;
+          }
+          .fourth-careers-section > div:nth-child(2) > p{
+            font-size: 22.4px;
+            margin: 0 0 16px;
+          }
+          .fourth-careers-section {
+            padding: 57.6px 0;
+            text-align: center;
+          }
+          .fifth-careers-section,.sixth-careers-section{
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+         
+          }
+          .fifth-careers-section > div:nth-child(1),
+          .sixth-careers-section > div:nth-child(1)
+          {
+            width: 50%;
+          }
+
+          .fifth-careers-section > div:nth-child(2) > p{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 80px 0 16px;
+            padding: 0 50px 0 30px;
+            line-height: 1.8;
+
+          }
+          .fifth-careers-section > div:nth-child(2) > h3{
+            font-size: 32px;
+            margin: 70px 50px 20px -80px;
+            padding: 16px 368px 16px 16px;
+            background-color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+          }
+          .fifth-careers-section > div:nth-child(1) > picture{
+            padding-left: 30px;
+          }
+
+          .sixth-careers-section > div:nth-child(1) > p{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 70px 0 16px;
+            padding: 0 50px 0 30px;
+            line-height: 1.8;
+
+          }
+          .sixth-careers-section > div:nth-child(1) > h3{
+            font-size: 32px;
+            background-color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            text-align: end;
+            margin: 70px -37px 0 0;
+            padding: 16px 0 16px 335px;
+          }
+          
+          .fifth-careers-section > div:nth-child(2) {
+            border-left:5px solid #f8ad1d;
+            width: 50%;
+          }
+          
+        .sixth-careers-section > div:nth-child(2){
+          border-left:5px solid #f8ad1d;
+          width: 50%;
+        }
+        .sixth-careers-section > div:nth-child(2) > picture{
+          padding-left: 60px;
+        }
+        .seventh-careers-section{
+          max-width: 1220px ;
+          margin: 0 auto;
+          padding: 76.8px 0 24px;
+        }
+        .seventh-careers-section h2{
+          font-size: 38px;
+          font-weight: 600;
+          padding-left: 40%;
+        }
+        .eight-careers-section{
+          max-width: 1220px;
+          margin: 0 auto;
+          padding-bottom: 76.8px;
+        }
+
+        .video-container video {
+          max-width: 100%; /* Make sure the video doesn't overflow its container */
+          height: auto; /* Maintain aspect ratio */
+      }
+      
+      @media (max-width: 768px) {
+        .first-careers-section {
+          background-position: top; /* Moves the image focus to the top */
+          height: auto; 
+          background-size: cover;
+        }
+        .first-careers-section > div:nth-child(1){
+          margin-top:64px;
+        }
+        .first-careers-section h1 {
+          font-size: 48px; 
+          margin-bottom: 0;
+        }
+      
+        .first-careers-section > div:nth-child(2) p {
+          font-size: 16px; 
+          font-weight: 700;
+          margin-bottom: 16px; 
+        }
+        .first-careers-section > div:nth-child(3){
+          font-size: 12px;
+  
+          padding: 6px 10px;
+         margin: 0px 0 47.6px;
+          border-radius: 3px;
+         
+        }
+       
+        .second-careers-section{
+          padding: 0 15px;
+  
+      }
+      .second-careers-section > div:nth-child(1) > p {
+      padding: 32px 0;
+        }
+        .second-careers-section > div:nth-child(2) > h2 {
+          font-size: 24px;
+          margin: 0 0 8px;
+          }
+          .second-careers-section > div:nth-child(3) > p{
+            font-size: 17.6px;
+            margin: 0 0 54px;
+      }
+      .second-careers-section > div:nth-child(1) > p{
+        font-size: 17.6px;
+  }
+       .new-wrapper-class{
+        background-image: none;
+        padding: 56px 16px;
+        text-align: center;
+       }
+       .carousel-first-section, 
+       .carousel-second-section, 
+       .carousel-third-section {
+         display:flex;
+         flex-direction: column;
+       }
+       .carousel-first-section img, 
+       .carousel-second-section img, 
+       .carousel-third-section img{
+          width: 149px;
+          height: 149px;
+          border: 5px solid white;
+          border-radius: 50%;
+       }
+       .carousel-first-section > div:first-of-type, 
+       .carousel-second-section > div:first-of-type, 
+       .carousel-third-section  > div:first-of-type
+       {
+         margin-left: 10px;
+       }
+       .carousel-first-section > div:nth-child(2), 
+          .carousel-second-section > div:nth-child(2), 
+          .carousel-third-section  > div:nth-child(2) 
+          {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(2) {
+            font-size: 16px;
+           margin:0 0 16px;
+           padding:16px 0 0 ;
+          }
+          .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(1){
+              font-size: 16px;
+              padding: 8px 16px;
+              margin-top: 16px;
+              margin-left: 0;
+              align-self: center;
+
+          }
+          .carousel-indicators{
+            bottom: auto;
+          }
+          .fourth-careers-section {
+            padding: 57.6px 0 64px 0;
+            text-align: center;
+          }
+          .fourth-careers-section > div:nth-child(1) > h2 {
+            font-size: 24px;
+          }
+          .fourth-careers-section > div:nth-child(2) > p{
+            font-size: 17.6px;
+            font-weight: 600;
+          }
+          .fifth-careers-section, .sixth-careers-section{
+              display: block;
+              
+          }
+          .sixth-careers-section{
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .fifth-careers-section > div:nth-child(2) > h3{
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin: 1px 0 8px;
+            padding: 25.6px 35px 16px;
+
+          }
+          .fifth-careers-section  img{         
+            width: 90%;
+          }
+          .sixth-careers-section  img{         
+            width: 90%;
+          }
+          .fifth-careers-section > div:nth-child(1),
+          .sixth-careers-section > div:nth-child(1)
+          {
+            width: 100%;
+            /* padding: 0 15px; */
+          }
+          .fifth-careers-section > div:nth-child(1) > picture{
+            padding:0 15px;
+          }
+          .sixth-careers-section > div:nth-child(2) > picture{
+            padding:0 15px;
+          }
+          .fifth-careers-section > div:nth-child(2) {
+            border-left:none;
+            width: 100%;
+          }
+          
+        .sixth-careers-section > div:nth-child(2){
+          border-left:none;
+          width:100%;
+        }
+        .sixth-careers-section > div:nth-child(1) > h3{
+          
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin: 1px 0 8px;
+        padding: 25.6px 35px 16px;
+
+        }
+        .new-wrapper-class {
+         width: auto;
+        }
+        .fifth-careers-section > div:nth-child(2) > p{
+          font-size: 18px;
+          margin: 0 0 16px;
+          padding: 16px 16px 0;
+          text-align: center;
+        }
+        .sixth-careers-section > div:nth-child(1) > p{
+          font-size: 18px;
+          margin: 0 0 16px;
+          padding: 16px 16px 0;
+          text-align: center;
+        }
+        /* Life at grazitti section  */
+        .seventh-careers-section h2{
+          margin: 0 0 24px;
+          padding: 0;
+          text-align: center;
+
+        }
+        .seventh-careers-section{
+          padding: 76.8px 0 0px;
+        }
+        .eight-careers-section{
+          padding: 0 15px 48px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1220px) {
+      .first-careers-section {
+        background-size: contain;
+       height: 32vh;
+    }
+    .second-careers-section{
+      padding: 56px;
+    }
+      .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(2) {
+        font-size: 15.2px;
+        margin: 0 0 16px;
+        padding: 58px 16px 0 32px;
+    }
+      .new-wrapper-class{
+        background-size: cover;
+      }
+      .new-wrapper-class > div > div:nth-child(2) > p:nth-of-type(1){
+        margin-left: 0;
+        margin-top: 90px;
+      }
+      .fifth-careers-section, .sixth-careers-section{
+        display: block;
+        width: 70%;
+    }
+    .sixth-careers-section{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .fifth-careers-section > div:nth-child(1),
+          .sixth-careers-section > div:nth-child(1)
+          {
+            width: 100%;
+          }
+          .fifth-careers-section > div:nth-child(2),
+          .sixth-careers-section > div:nth-child(2){
+
+            border-left:none;
+            width: 100%;
+          }
+          
+       
+    .sixth-careers-section > div:nth-child(1) > p{
+      font-size: 18px;
+      margin: 0 0 16px;
+      padding: 16px 16px 0;
+      text-align: center;
+    }
+    .fifth-careers-section > div:nth-child(2) > p{
+      font-size: 18px;
+      margin: 0 0 16px;
+      padding: 16px 16px 0;
+      text-align: center;
+    }
+   
+    .fifth-careers-section > div:nth-child(2) > h3{
+      font-size: 28.8px;
+      font-weight: 600;
+      text-align: center;
+      margin: 1px 0 8px;
+      padding: 25.6px 35px 16px;
+
+    }
+    .sixth-careers-section > div:nth-child(1) > h3{
+      font-size: 28.8px;
+      font-weight: 600;
+      text-align: center;
+      margin: 1px 0 8px;
+      padding: 25.6px 35px 16px;
+
+    }
+    .seventh-careers-section h2{
+      text-align: center;
+      padding: 0;
+    }
+    .eight-careers-section{
+      margin: 0 50px;
+      padding: 0 15px 76.8px;
+    }
+    }

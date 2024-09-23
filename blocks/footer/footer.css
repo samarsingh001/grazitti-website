@@ -1,20 +1,197 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
-}
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    /* background-color:red; */
 }
-
-footer .footer p {
+h1,h2,h3,h4,h5,h6,p {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+.grazitti-heading-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.grazitti-heading-footer , .grazitti-about
+{
+    color:white;
+    background-color:#10141D;
+    /* padding:24px 0 48px; this i make comment */
+}
+
+.grazitti-about .default-content-wrapper {
+    display: flex;
+    width:1220px;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+
+.grazitti-heading-footer .default-content-wrapper p:first-of-type {
+  font-size: 38px;
+    font-weight:300;
+   
+}
+.grazitti-about .default-content-wrapper p:first-of-type {
+ width:48%;
+   font-size:16px;
+    text-align:justify;
+}
+
+.grazitti-heading-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.grazitti-about .default-content-wrapper p::first-line {
+    font-size:38px;
+    font-weight:300;
+ }
+.grazitti-heading-footer .default-content-wrapper p:nth-child(2) {
+  cursor:pointer;
+}
+.grazitti-about .default-content-wrapper p:nth-child(2) {
+  cursor:pointer;
+  margin-top: -30px;
+}
+.grazitti-about .default-content-wrapper p:first-child a {
+  display:inline-block;
+    margin-top:16px;
+}
+.grazitti-about .default-content-wrapper p:first-child a {
+  color:#13A7EC;
+}
+
+.grazitti-about {
+  display: block; /* Ensure the element takes up space */
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  /* transition: height 3s ease, opacity 3s ease; */
+  transform: translateY(100%); /* Start below the viewport */
+  transition: transform 3s ease, opacity 2s ease;
+
+}
+.grazitti-about.active{
+  
+  opacity: 1;
+  height: auto;
+  padding: 24px 0 48px;
+  transform: translateY(0); /* Slide into place from the bottom */
+
+}
+.grazitti-about .default-content-wrapper p:nth-of-type(3) {
+padding-top:10px;
+}
+
+/* main img {
+ 
+  height: 100%;
+} */
+
+.icon-angledown,
+.icon-facebook,
+.icon-twitter,
+.icon-linkedin,
+.icon-pinterest,
+.icon-youtube,
+.icon-wordpress,
+.icon-instagram{
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .grazitti-about .default-content-wrapper {
+    /* display: block;
+    padding: 0 15px; */
+    width: 80%;
+  }
+  .grazitti-about .default-content-wrapper p:nth-of-type(3) {
+    padding-top:0;
+    }
+  .grazitti-about .default-content-wrapper p:first-of-type::first-line {
+   
+    font-size: 38px;
+    font-weight: 300;
+}
+.grazitti-about .default-content-wrapper p:first-of-type {
+  width:100%;
+ }
+   /*to center the img having video*/
+.grazitti-about .default-content-wrapper p:nth-child(3){
+  text-align: center; /* Center the image within the <p> tag */
+}
+.grazitti-about .default-content-wrapper p img {
+  /* max-width: 100%; Make sure the image doesn't exceed the width of its parent *//*done this change*/
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Removes the inline spacing for the image */
+  margin: 0 auto; /* Center the image horizontally */
+  width:100%; /*done this change*/
+}
+/*done this chabge*/
+grazitti-about.active{
+  
+ overflow: visible;
+
+}
+.section.grazitti-about .default-content-wrapper {
+  display: flex;
+  flex-direction: column; /* Ensure the flex-direction is column for stacking */
+}
+
+.section.grazitti-about .default-content-wrapper p:nth-child(1) {
+  order: 2; /* Move the first <p> tag to the second position */
+}
+
+.section.grazitti-about .default-content-wrapper p:nth-child(2) {
+  order: 1; /* Move the second <p> tag to the first position */
+  text-align: center;
+}
+
+.section.grazitti-about .default-content-wrapper p:nth-child(3) {
+  order: 3; /* Keep the third <p> tag in the third position */
+}
+.grazitti-about .default-content-wrapper p:first-child a {
+    margin-top:16px;
+    margin-bottom: 0;
+}
+}
+@media (min-width: 768px) and (max-width: 1220px) {
+  .grazitti-about .default-content-wrapper {
+    display: block;
+    width:80%;
+    margin: 0 auto;
+}
+.section.grazitti-about .default-content-wrapper {
+  display: flex;
+  flex-direction: column; /* Ensures the elements are stacked vertically */
+}
+  .section.grazitti-about .default-content-wrapper p:nth-child(1) {
+    order: 2; /* Move the first <p> tag to the second position */
+    text-align: left;
+    width:100%;
+    font-size: 20px;
+
+  }
+  
+  .section.grazitti-about .default-content-wrapper p:nth-child(2) {
+    order: 1; /* Move the second <p> tag to the first position */
+    text-align: center;
+  }
+  
+  .section.grazitti-about .default-content-wrapper p:nth-child(3) {
+    order: 3; /* Keep the third <p> tag in the third position */
+    text-align: left;
+
   }
 }
