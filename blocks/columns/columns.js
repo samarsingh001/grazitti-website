@@ -15,4 +15,29 @@ export default function decorate(block) {
       }
     });
   });
+
+  // Blogs Section 
+
+  const blogsContainer = document.querySelector('.blogs-container');
+  console.log(blogsContainer);
+  const blogs = document.querySelectorAll('.blogs-container .blogs-wrapper .blogs > div')
+  console.log(blogs);
+  blogs.forEach((div, index) =>{
+    if (index % 2 == 0){
+      div.classList.add('grz-blogs-container');
+    } else {
+      div.classList.add('grz-videos-container');
+    }
+  });
+  
+  const grzBlogsContainer = document.querySelectorAll('.grz-blogs-container > div');
+  const grzVideosContainer = document.querySelectorAll('.grz-videos-container > div');
+  function addClasses(container, titleClass, itemClass) {
+    container.forEach((div, index) => {
+      div.classList.add(index === 0 ? titleClass : itemClass);
+    });
+  }
+  addClasses(grzBlogsContainer, 'grz-blog-title', 'grz-blog-item');
+  addClasses(grzVideosContainer, 'grz-video-title', 'grz-video-item');
 }
+

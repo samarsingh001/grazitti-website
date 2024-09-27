@@ -1,8 +1,8 @@
-.columns-container {
+.columns-container,.blogs-container {
   max-width: 1264px;
   margin: auto;
 }
-.columns-container{
+.columns-container, .blogs-container{
   padding-top: 70px;
 }
 .columns > div {
@@ -25,7 +25,9 @@
 .columns > div > .columns-img-col img {
   display: block;
 }
-
+#why-choose-us{
+  font-weight: 400;
+}
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
@@ -36,5 +38,129 @@
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+}
+
+/* our blogs container */
+
+.blogs-wrapper > .blogs{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+.blogs-wrapper{
+  padding: 0 35px;
+}
+#from-our-blog,
+#our-videos{
+  position: relative;
+  /* text-align: center; */
+  padding-inline-start: 20px;
+  font-weight: 400;
+  padding-bottom: 60px;
+}
+#from-our-blog::after,
+#our-videos::after{
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 2px;
+  background-color: #fcb735;
+  left: 50%;
+  margin-left: -28px;
+  bottom: 45px;
+}
+.grz-blogs-container,
+.grz-videos-container{
+  width: 50%;
+}
+.grz-blog-title,.grz-video-title{
+  text-align: center;
+}
+.grz-blog-item{
+  /* display: flex;
+  
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; */
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.grz-blog-item > table > tbody > tr{
+  display: flex;
+  gap: 20px;
+}
+.grz-blog-item > table > tbody > tr > td > p{
+  font-size: 16px;
+}
+.grz-blog-item > table > tbody > tr > td > p:nth-of-type(1){
+  color: #13A7EC;
+}
+.grz-blog-item > table > tbody > tr > td > p:nth-of-type(1):hover{
+  color: #13A7EC;
+  text-decoration: underline;
+  cursor: pointer;
+}
+span.icon-calendar-days-solid {
+  width: 15px;
+  height: 15px;
+  padding-right: 8px;
+} 
+@media (width <= 900px){
+  .blogs-container{
+    width: 100%;
+    /* max-width: 900px; */
+    /* margin: 0 auto;
+    padding: 0 20px; */
+  }
+  .blogs-wrapper{
+    /* width: 100%; */
+  }
+  .blogs-wrapper > .blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 0px; 
+  }
+  .grz-blogs-container,
+  .grz-videos-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+  #why-choose-us,
+  #from-our-blog,
+  #our-videos{
+    font-size: 32px;
+  }
+  .columns-container .columns-wrapper > .columns{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .block > .left{
+    text-align: center;
+  }
+  .block > .left,
+  .block > .center,
+  .block > .right{
+    width: 85%;
+    text-align: center;
+  }
+  .center > div{
+    display: block;
+  }
+  .columns-wrapper h3{
+    font-size: 28px;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  .columns-wrapper p{
+    font-size: 16px;
   }
 }
